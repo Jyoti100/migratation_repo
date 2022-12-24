@@ -1,2 +1,9 @@
 include LICENSE
 include README.rst
+recursive-include management/commands/ *
+recursive-include templates *
+recursive-include tests *
+recursive-include server *
+recursive-include data *
+recursive-include fixtures *
+recursive-include backends *

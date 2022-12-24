@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: polls
+Version: 0.0.1
+Summary: "Python package developer's polls (using pyproject.toml)."
+Classifier: [
+Classifier: "Development Status :: 3 - Alpha",
+Classifier: "License :: OSI Approved :: MIT License",
+Classifier: "Natural Language :: English",
+Classifier: "Operating System :: OS Independent",
+Classifier: "Programming Language :: Python",
+Classifier: "Programming Language :: Python :: 3.7",
+Classifier: ]
+License-File: LICENSE

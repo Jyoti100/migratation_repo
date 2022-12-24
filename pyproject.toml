@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools","setuptools-git-versioning"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "polls"
+dynamic = ["dependencies","version"]
+
+
+[tool.setuptools-git-versioning]
+enabled = true
+
+
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[optional]
+repository = "https://github.com/mysite"
