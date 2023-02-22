@@ -21,7 +21,7 @@ steps:
 
 - script: |
     python -m pip install --upgrade pip
-    python -m pip install --upgrade build, setuptools, twine
+    python -m pip install --upgrade build setuptools twine
     python -m build
   displayName: 'Install dependencies'
 
