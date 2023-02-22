@@ -28,7 +28,7 @@ steps:
 
 - task: TwineAuthenticate@1
   inputs:
-    artifactFeed: Drop
+    artifactFeed: raw-samples
     
 - script: |
-   twine upload -r Drop --config-file $(PYPIRC_PATH) dist/*
+   twine upload -r "raw-samples" --config-file $(PYPIRC_PATH) dist/*
