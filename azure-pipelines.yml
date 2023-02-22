@@ -31,4 +31,4 @@ steps:
     artifactFeed: Drop
     
 - script: |
-   twine upload -r "Drop" --config-file $(PYPIRC_PATH) dist/*
+   twine upload -r Drop --config-file $(PYPIRC_PATH) dist/*
