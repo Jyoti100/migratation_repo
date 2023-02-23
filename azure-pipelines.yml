@@ -8,27 +8,10 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
-strategy:
-  matrix:
-    Python37:
-      python.version: '3.7'
+
+variables:
+- name: var1
+  value: "hello world"
 
 steps:
-- task: UsePythonVersion@0
-  inputs:
-    versionSpec: '$(python.version)'
-  displayName: 'Use Python $(python.version)'
-
-- script: |
-    python -m pip install --upgrade pip
-    python -m pip install --upgrade build setuptools twine
-    python -m build
-  displayName: 'Install dependencies'
-
-
-- task: TwineAuthenticate@1
-  inputs:
-    artifactFeed: raw-samples
-    
-- script: |
-   twine upload -r "raw-samples" --config-file $(PYPIRC_PATH) dist/*
+  - script: echo $(var1)
