@@ -12,6 +12,8 @@ pool:
 variables:
 - name: var1
   value: "hello world"
+- group: New variable group 23-Feb
 
 steps:
   - script: echo $(var1)
+  - script: echo $(grp_var1)
